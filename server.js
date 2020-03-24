@@ -27,9 +27,9 @@ app.listen(80, function () {
 const bodyParser = require('body-parser');
 app.use(bodyParser.json());
 
-// Mount your existing apiRouter below at the '/api' path.
+// Mounted the existing apiRouter below at the '/api' path.
 const apiRouter = require('./server/api');
-
+app.use('/api', apiRouter);
 
 // This conditional is here for testing purposes:
 if (!module.parent) { 
