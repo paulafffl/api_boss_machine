@@ -23,8 +23,9 @@ app.listen(80, function () {
   console.log('CORS-enabled web server is listening on port 80');
 });
 
-// Add middware for parsing request bodies here:
-
+// Added middware for parsing request bodies here:
+const bodyParser = require('body-parser');
+app.use(bodyParser.json());
 
 // Mount your existing apiRouter below at the '/api' path.
 const apiRouter = require('./server/api');
