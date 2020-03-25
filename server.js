@@ -9,9 +9,7 @@ module.exports = app;
 const PORT = process.env.PORT || 4001;
 
 // Added middleware for handling CORS requests from index.html
-var express = require('express');
 var cors = require('cors');
-var app = express();
  
 app.use(cors());
  
