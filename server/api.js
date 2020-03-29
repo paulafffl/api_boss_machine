@@ -5,3 +5,6 @@ module.exports = apiRouter;
 
 const minionsRouter = require('./minions.js');
 apiRouter.use('/minions', minionsRouter);
+
+const ideasRouter = require('./ideas.js');
+apiRouter.use('/ideas', ideasRouter);
